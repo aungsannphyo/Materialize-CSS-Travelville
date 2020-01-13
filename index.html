@@ -55,6 +55,23 @@
         </div>
       </nav>
     </div>
+    <ul class="side-nav" id="mobile-nav">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#search">Search</a>
+      </li>
+      <li>
+        <a href="#popular">Popular Places</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
 
     <!--Import jQuery before materialize.js-->
     <script
@@ -66,6 +83,9 @@
       $(document).ready(function() {
         // Custom JS & jQuery here
       });
+
+      //JQuery for button collpse
+      $(".button-collapse").sideNav();
     </script>
   </body>
 </html>
