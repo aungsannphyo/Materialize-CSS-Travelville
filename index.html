@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <!-- Nav bar start -->
     <div class="navbar-fixed">
       <nav class="teal">
         <div class="container">
@@ -72,6 +73,46 @@
         <a href="#contact">Contact</a>
       </li>
     </ul>
+    <!-- Nav bar End -->
+    <!-- Section : Slider  Start-->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" alt="" />
+          <div class="caption center-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              nemo quis reiciendis minima vel id.
+            </h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort2.jpg" alt="" />
+          <div class="caption left-align">
+            <h2>Group and Individual Getaways</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              nemo quis reiciendis minima vel id.
+            </h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/resort3.jpg" alt="" />
+          <div class="caption right-align">
+            <h2>We Work with All Budgests</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              nemo quis reiciendis minima vel id.
+            </h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Section : Slider  End-->
 
     <!--Import jQuery before materialize.js-->
     <script
@@ -86,6 +127,14 @@
 
       //JQuery for button collpse
       $(".button-collapse").sideNav();
+
+      //slider
+      $(".slider").slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
     </script>
   </body>
 </html>
